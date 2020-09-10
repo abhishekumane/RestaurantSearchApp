@@ -1,16 +1,18 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
+const DATA = require('./getRestaurantsAPI.json').response[1].restaurantList[1]
+
 function Rosti() {
     return (
         <View style={styles.container}>
             <View style={styles.restaurant}>
-                <Text style={styles.restaurant_name}>Rosti Tuscan Kitchen</Text>
-                    <Image style={styles.image} source={{uri: 'https://s3-media0.fl.yelpcdn.com/bphoto/7wluVAQB7eoYlhMw7XJ93Q/o.jpg'}} />
-                    <View style={styles.restaurant_ratingContainer}>
-                        <Text style={styles.restaurant_rating}>Average Rating: 4.3</Text>
-                        <Text style={styles.restaurant_review}>Number of Reviews: 935</Text>
-                    </View>
+                <Text style={styles.restaurant_name}>{DATA.name}</Text>
+                <Image style={styles.image} source={{uri: DATA.imageUrl}} />
+                <View style={styles.restaurant_ratingContainer}>
+                    <Text style={styles.restaurant_rating}>Average Rating: {DATA.rating}</Text>
+                    <Text style={styles.restaurant_review}>Number of Reviews: {DATA.review}</Text>
+                </View>
             </View>
         </View>
     );

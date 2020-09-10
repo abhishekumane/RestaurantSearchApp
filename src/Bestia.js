@@ -1,15 +1,17 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
+const DATA = require('./getRestaurantsAPI.json').response[0].restaurantList[1]
+
 function Bestia() {
     return (
         <View style={styles.container}>
             <View style={styles.restaurant}>
-                <Text style={styles.restaurant_name}>Bestia</Text>
-                <Image style={styles.image} source={{uri: "https://www.we-heart.com/upload-images/bestialosangeles1753.jpg"}} />
+                <Text style={styles.restaurant_name}>{DATA.name}</Text>
+                <Image style={styles.image} source={{uri: DATA.imageUrl}} />
                 <View style={styles.restaurant_ratingContainer}>
-                    <Text style={styles.restaurant_rating}>Average Rating: 4.7</Text>
-                    <Text style={styles.restaurant_review}>Number of Reviews: 16928</Text>
+                    <Text style={styles.restaurant_rating}>Average Rating: {DATA.rating}</Text>
+                    <Text style={styles.restaurant_review}>Number of Reviews: {DATA.review}</Text>
                 </View>
             </View>
         </View>

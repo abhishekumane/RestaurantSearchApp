@@ -1,15 +1,17 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
+const DATA = require('./getRestaurantsAPI.json').response[0].restaurantList[0]
+
 function BottegaLouie() {
     return (
         <View style={styles.container}>
             <View style={styles.restaurant}>
-            <Text style={styles.restaurant_name}>Bottega Louie</Text>
-                <Image style={styles.image} source={{uri: "https://cdn.vox-cdn.com/thumbor/uEI6K6h-MGHMC66Lv6w2PSZq5Ek=/0x0:1800x1350/920x613/filters:focal(0x0:1800x1350)/cdn.vox-cdn.com/uploads/chorus_image/image/49926111/BL_RESTAURANT.0.0.jpg"}} />
+                <Text style={styles.restaurant_name}>{DATA.name}</Text>
+                <Image style={styles.image} source={{uri: DATA.imageUrl}} />
                 <View style={styles.restaurant_ratingContainer}>
-                    <Text style={styles.restaurant_rating}>Average Rating: 4.7</Text>
-                    <Text style={styles.restaurant_review}>Number of Reviews: 16928</Text>
+                    <Text style={styles.restaurant_rating}>Average Rating: {DATA.rating}</Text>
+                    <Text style={styles.restaurant_review}>Number of Reviews: {DATA.review}</Text>
                 </View>
             </View>
         </View>
