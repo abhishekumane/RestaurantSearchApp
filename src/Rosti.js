@@ -4,12 +4,14 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 function Rosti() {
     return (
         <View style={styles.container}>
-            <Text style={styles.restaurant_name}>Rosti Tuscan Kitchen</Text>
-                            <Image style={styles.image} source={{uri: 'https://s3-media0.fl.yelpcdn.com/bphoto/7wluVAQB7eoYlhMw7XJ93Q/o.jpg'}} />
-                            <View style={styles.restaurant_ratingContainer}>
-                              <Text style={styles.restaurant_rating}>Average Rating: 4.3</Text>
-                              <Text style={styles.restaurant_review}>Number of Reviews: 935</Text>
-                            </View>
+            <View style={styles.restaurant}>
+                <Text style={styles.restaurant_name}>Rosti Tuscan Kitchen</Text>
+                    <Image style={styles.image} source={{uri: 'https://s3-media0.fl.yelpcdn.com/bphoto/7wluVAQB7eoYlhMw7XJ93Q/o.jpg'}} />
+                    <View style={styles.restaurant_ratingContainer}>
+                        <Text style={styles.restaurant_rating}>Average Rating: 4.3</Text>
+                        <Text style={styles.restaurant_review}>Number of Reviews: 935</Text>
+                    </View>
+            </View>
         </View>
     );
 }
@@ -21,9 +23,14 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
+    restaurant: {
+      margin: 5,
+      padding: 10,
+      backgroundColor: '#fff'
+    },
     image: {
-      width: 275,
-      height: 200,
+      width: 325,
+      height: 250,
       display: "flex"
     },
     restaurant_name: {
