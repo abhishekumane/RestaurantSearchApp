@@ -1,0 +1,85 @@
+{
+  "httpcode": 200,
+  "httpmessage": "sucess",
+  "response": [
+    {
+      "id": "1",
+      "category": "Top Rated",
+      "restaurantList": [
+        {
+          "id": "Bottega Louie",
+          "name": "Bottega Louie",
+          "imageUrl": "https://cdn.vox-cdn.com/thumbor/uEI6K6h-MGHMC66Lv6w2PSZq5Ek=/0x0:1800x1350/920x613/filters:focal(0x0:1800x1350)/cdn.vox-cdn.com/uploads/chorus_image/image/49926111/BL_RESTAURANT.0.0.jpg",
+          "rating": "4.7",
+          "review": "16928"
+        },
+        {
+          "id": "Bestia",
+          "name": "Bestia",
+          "imageUrl": "https://www.we-heart.com/upload-images/bestialosangeles1753.jpg",
+          "rating": "4.5",
+          "review": "6165"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "category": "Italian Cuisine",
+      "restaurantList": [
+        {
+          "id": "Gourmet Romano",
+          "name": "Gourmet Romano",
+          "imageUrl": "https://s3-media0.fl.yelpcdn.com/bphoto/f3BcClPAcnuETgoEjjcW0g/o.jpg",
+          "rating": "4.4",
+          "review": "287"
+        },
+        {
+          "id": "Rosti Tuscan Kitchen",
+          "name": "Rosti Tuscan Kitchen",
+          "imageUrl": "https://s3-media0.fl.yelpcdn.com/bphoto/7wluVAQB7eoYlhMw7XJ93Q/o.jpg",
+          "rating": "4.3",
+          "review": "935"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "category": "Seafood",
+      "restaurantList": [
+        {
+          "id": "Fishermans' Outlet",
+          "name": "Fishermans' Outlet",
+          "imageUrl": "https://s3-media0.fl.yelpcdn.com/bphoto/t_EM5YoVYRwO5jRKGCwNUw/o.jpg",
+          "rating": "4.1",
+          "review": "1148"
+        },
+        {
+          "id": "Krack N Krab",
+          "name": "Krack N Krab",
+          "imageUrl": "https://s3-media0.fl.yelpcdn.com/bphoto/FsI8SDk2LARhQeLCEwZm8Q/o.jpg",
+          "rating": "4.6",
+          "review": "45"
+        }
+      ]
+    },{
+      "id": "4",
+      "category": "Steakhouses",
+      "restaurantList": [
+        {
+          "id": "Taylor's Steakhouse",
+          "name": "Taylor's Steakhouse",
+          "imageUrl": "https://s3-media0.fl.yelpcdn.com/bphoto/U-mUP201CtydekmH-QIkhw/o.jpg",
+          "rating": "4",
+          "review": "1172"
+        },
+        {
+          "id": "Nick and Stefs",
+          "name": "Nick + Stef's Steakhouse",
+          "imageUrl": "https://s3-media0.fl.yelpcdn.com/bphoto/bgfyo5ohZHvM-6Ih7wiQPA/o.jpg",
+          "rating": "4.2",
+          "review": "660"
+        }
+      ]
+    }
+  ]
+}
