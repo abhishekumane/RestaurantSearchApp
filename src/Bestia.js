@@ -21,14 +21,17 @@ function Bestia() {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#BABCBC',
+      backgroundColor: '#CCFFFF',
       alignItems: 'center',
       justifyContent: 'center',
     },
     restaurant: {
       margin: 5,
       padding: 10,
-      backgroundColor: '#fff'
+      backgroundColor: '#fff',
+      borderRadius: 10,
+      borderWidth: 1,
+      borderColor: "#000",
     },
     image: {
         width: 325,

@@ -3,7 +3,6 @@
     "name": "RestaurantSearchApp",
     "slug": "RestaurantSearchApp",
     "version": "1.0.0",
-    "orientation": "portrait",
     "icon": "./assets/plate1.png",
     "splash": {
       "image": "./assets/plate1.png",

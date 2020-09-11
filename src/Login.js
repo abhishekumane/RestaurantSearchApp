@@ -18,24 +18,23 @@ function Login({ navigation }) {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#A4A4A4',
+      backgroundColor: '#99FFFF',
       alignItems: 'center',
       justifyContent: 'center',
     },
     text: {
         fontSize: 35,
-        color: "#1F1F1F",
+        color: "#006699",
         fontWeight: 'bold',
         marginBottom: 5,
     },
     text2: {
         fontSize: 25,
-        color: "#1F1F1F",
-     //   fontWeight: 'bold',
+        color: "#006699",
         marginBottom: 20,
     },
     button: {
-        backgroundColor: "#FF0038",
+        backgroundColor: "#00CCCC",
         padding: 10,
         width: 150,
         alignItems: 'center',

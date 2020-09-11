@@ -57,7 +57,7 @@ function Home({ navigation }) {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#BABCBC',
+      backgroundColor: '#CCFFFF',
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -66,6 +66,7 @@ const styles = StyleSheet.create({
       fontSize: 20,
       color: "#cc1b1b",
       fontWeight: "bold",
+      
     },
     searchbar: {
       width: 320,
@@ -74,9 +75,12 @@ const styles = StyleSheet.create({
       height: 17,
     },
     restaurant: {
-      margin: 5,
+      margin: 10,
       padding: 10,
-      backgroundColor: '#fff'
+      backgroundColor: '#fff',
+      borderRadius: 10,
+      borderWidth: 1,
+      borderColor: "#000",
     },
     image: {
       width: 275,
@@ -89,8 +93,10 @@ const styles = StyleSheet.create({
     },
     category_title: {
       fontSize: 35,
+      color: '#006699',
       fontStyle: 'italic',
       fontWeight: 'bold',
+      textDecorationLine: "underline",
     },
     restaurant_name: {
       textAlign: 'center',
